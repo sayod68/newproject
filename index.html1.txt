@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Одил</title>
+    <style>
+        /* Общие стили */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        /* Шапка */
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Портфолио */
+        #portfolio {
+            padding: 40px 20px;
+        }
+
+        .project {
+            background: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Футер */
+        footer {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 1em;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Анимация */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👋 Привет, я Одил!</h1>
+        <p>Веб-разработчик | Дизайнер | Творец ✨</p>
+    </header>
+
+    <section id="portfolio">
+        <h2>🖥️ Мои проекты</h2>
+        <div class="project">
+            <h3>🌟 Проект 1</h3>
+            <p>Описание проекта 1 — тут можно рассказать, что именно ты сделал.</p>
+        </div>
+        <div class="project">
+            <h3>🚀 Проект 2</h3>
+            <p>Описание проекта 2 — добавь сюда информацию о своей работе.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>📧 Контакты: <a href="mailto:odil@example.com">odil@example.com</a></p>
+    </footer>
+</body>
+</html>
